@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Create An Account</title>
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600&display=swap");
+            html,
+            body,
+            div,
+            span,
+            object,
+            iframe,
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6,
+            p,
+            blockquote,
+            pre,
+            abbr,
+            address,
+            cite,
+            code,
+            del,
+            dfn,
+            em,
+            img,
+            ins,
+            kbd,
+            q,
+            samp,
+            small,
+            strong,
+            sub,
+            sup,
+            var,
+            b,
+            i,
+            dl,
+            dt,
+            dd,
+            ol,
+            ul,
+            li,
+            fieldset,
+            form,
+            label,
+            legend,
+            table,
+            caption,
+            tbody,
+            tfoot,
+            thead,
+            tr,
+            th,
+            td,
+            article,
+            aside,
+            canvas,
+            details,
+            figcaption,
+            figure,
+            footer,
+            header,
+            hgroup,
+            menu,
+            nav,
+            section,
+            summary,
+            time,
+            mark,
+            audio,
+            video {
+                margin: 0;
+                padding: 0;
+                border: 0;
+                outline: 0;
+                font-size: 100%;
+                vertical-align: baseline;
+                background: transparent;
+            }
+            body {
+                line-height: 1;
+            }
+            body {
+                margin: 0px 8px;
+            }
+            header {
+                font-family: "Roboto Slab", serif;
+                font-size: 30px;
+                margin: 5px 0px 25px 0px;
+                font-weight: 600;
+            }
+            #create-account {
+                display: flex;
+                flex-direction: column;
+                font-family: "Roboto Slab", serif;
+                font-weight: 400;
+            }
+            div {
+                margin-top: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Create An Account</h1>
+        </header>
+        <form id="create-account">
+            <span class="account__details"
+                >First name
+                <input
+                    name="first-name"
+                    type="text"
+                    placeholder="First Name"
+                    required
+                />
+            </span>
+            <span class="account__details"
+                >Last name
+                <input
+                    name="last-name"
+                    type="text"
+                    placeholder="Last Name"
+                    required
+                />
+            </span>
+            <span class="account__details"
+                >Email
+                <input name="email" type="email" placeholder="Email" required
+            /></span>
+            <span class="account__details"
+                >Username
+                <input
+                    name="username"
+                    type="text"
+                    placeholder="Username"
+                    required
+            /></span>
+            <span class="account__details"
+                >Password
+                <input
+                    name="password"
+                    type="password"
+                    placeholder="Password"
+                    required
+                    minlength="10"
+            /></span>
+            <span class="account__details"
+                >birth
+                <input
+                    name="birth-date"
+                    type="date"
+                    placeholder="YYYY-MM-DD"
+                    required
+                />
+            </span>
+            <span class="account__details"
+                >How happy are you?
+                <input
+                    name="happiness-range"
+                    type="range"
+                    value=""
+                    list="tickmarks"
+                    required
+                />
+                <datalist id="tickmarks">
+                    <option value="0"></option>
+                    <option value="10"></option>
+                    <option value="20"></option>
+                    <option value="30"></option>
+                    <option value="40"></option>
+                    <option value="50"></option>
+                    <option value="60"></option>
+                    <option value="70"></option>
+                    <option value="80"></option>
+                    <option value="90"></option>
+                    <option value="100"></option>
+                </datalist>
+            </span>
+            <span class="account__details"
+                >What is your fav. color?
+                <input name="fav-color" type="color" value=""
+            /></span>
+            <div>
+                <input
+                    name="create-btn"
+                    type="submit"
+                    value="Create Account"
+                    required
+                />
+            </div>
+        </form>
+    </body>
+</html>
