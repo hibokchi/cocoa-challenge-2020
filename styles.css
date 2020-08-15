@@ -1,0 +1,41 @@
+@import "reset.css";
+
+body {
+    background-color: rgba(255, 99, 71);
+}
+.outside-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 99, 71);
+    height: 560px;
+    width: 780px;
+}
+.white-box {
+    height: 240px;
+    width: 240px;
+    border: 2px solid black;
+    background-color: rgba(245, 222, 179);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inside-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.blue-box {
+    background-color: #008080;
+    border: 2.5px solid white;
+    margin: 20px;
+    height: 50px;
+    width: 50px;
+}
+.blue-box__long {
+    background-color: #008080;
+    border: 2.5px dashed white;
+    height: 50px;
+    width: 200px;
+    margin: 0px 20px;
+}
