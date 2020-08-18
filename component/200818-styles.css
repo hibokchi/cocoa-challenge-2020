@@ -1,0 +1,89 @@
+@import "reset.css";
+.main-box {
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-box__center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #6bbcbe;
+    width: 430px;
+    height: 375px;
+}
+.main-box__icon {
+    display: flex;
+    margin: 50px 0px;
+}
+.icon__circle {
+    background-color: white;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin: 0px 10px;
+}
+.icon__block {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    width: 8px;
+    height: 30px;
+    margin: 0px 3px;
+}
+
+@keyframes rotateIcon {
+    0% {
+        transform: none;
+    }
+    20% {
+        transform: rotateZ(0deg);
+    }
+    75% {
+        transform: rotateZ(180deg);
+    }
+    100% {
+        transform: rotateZ(180deg);
+    }
+}
+.main-box__icon:first-child {
+    animation: rotateIcon 1s ease-in-out infinite;
+}
+
+@keyframes scaleBlock {
+    0% {
+        transform: scaleY(1);
+    }
+    25% {
+        transform: scaleY(2);
+    }
+    60% {
+        transform: scaleY(1);
+    }
+    100% {
+        transform: scaleY(1);
+    }
+}
+.main-box__icon .icon__block:first-child {
+    animation: scaleBlock infinite 1s ease-in-out;
+}
+.main-box__icon .icon__block:nth-child(2) {
+    animation: scaleBlock infinite 1s ease-in-out;
+    animation-delay: 0.1s;
+}
+.main-box__icon .icon__block:nth-child(3) {
+    animation: scaleBlock infinite 1s ease-in-out;
+    animation-delay: 0.2s;
+}
+.main-box__icon .icon__block:nth-child(4) {
+    animation: scaleBlock infinite 1s ease-in-out;
+    animation-delay: 0.3s;
+}
+.main-box__icon .icon__block:last-child {
+    animation: scaleBlock infinite 1s ease-in-out;
+    animation-delay: 0.4s;
+}
