@@ -1,0 +1,170 @@
+@import "reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;600;700;900&display=swap");
+
+body {
+    background-color: black;
+}
+.main-screen {
+    display: flex;
+    justify-content: center;
+    font-family: "Nunito", sans-serif;
+}
+.side-gap {
+    padding: 0px 25px;
+}
+.main-screen__box {
+    border: 5px solid#00C6AD;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 405px;
+}
+.screen-header {
+    display: flex;
+    align-items: center;
+    margin: 70px 0px 0px 0px;
+}
+.screen-header img {
+    width: 35px;
+    height: 35px;
+}
+.screen-header h1 {
+    font-size: 28px;
+    font-weight: 900;
+    margin-left: 98px;
+}
+.current-music {
+    padding-bottom: 40px;
+}
+.current-music__img__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 130px;
+    height: 135px;
+    background-color: #ffbd11;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+.current-music__row img {
+    width: 50px;
+    height: 50px;
+    filter: invert(100%);
+}
+.current-music__row {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+.current-music__info {
+    padding: 20px;
+}
+.current-music__info h2 {
+    font-size: 40px;
+    font-weight: 900;
+    margin: 10px 0px 8px 0px;
+}
+.current-music__info h3 {
+    padding: 8px 0px 10px 0px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.current-music__btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.btn__column {
+    display: flex;
+    align-items: center;
+}
+.btn__play {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-bottom-width: 6px;
+    border-radius: 15px;
+    padding: 18px 45px;
+}
+.btn__play img {
+    width: 25px;
+    height: 25px;
+    color: black;
+    transform: rotateZ(90deg);
+}
+.btn__play span {
+    margin: 0px 10px;
+    font-size: 23px;
+    font-weight: 900;
+}
+.btn__heart {
+    width: 32px;
+    height: 32px;
+    padding: 15px;
+    border: 2px solid black;
+    border-bottom-width: 6px;
+    border-radius: 50%;
+}
+.btn__plus {
+    width: 32px;
+    height: 32px;
+    padding: 15px;
+    border: 2px solid black;
+    border-bottom-width: 6px;
+    border-radius: 50%;
+}
+.btn__column:last-child img {
+    margin-left: 20px;
+}
+.other-music__row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.other-music__img {
+    width: 52px;
+    height: 52px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.other-music__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 15px;
+}
+.other-music__title {
+    font-size: 23px;
+    font-weight: 900;
+    padding-top: 5px;
+    margin-bottom: 7px;
+}
+.other-music__singer {
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+    padding-bottom: 5px;
+    color: rgba(0, 0, 0, 0.8);
+}
+.other-music__row:first-child .other-music__img {
+    background-color: #f85a2a;
+}
+.other-music__row:nth-child(2) .other-music__img {
+    background-color: #ff89bb;
+}
+.other-music__row:nth-child(3) .other-music__img {
+    background-color: #1847e5;
+}
+.other-music__row:nth-child(4) .other-music__img {
+    background-color: #00c6ad;
+}
+.dot {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 2px;
+    height: 2.5px;
+    border-radius: 50%;
+    margin: 0px 7px;
+}
