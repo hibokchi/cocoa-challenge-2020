@@ -1,0 +1,165 @@
+@import "reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+@import "animation.css";
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Open Sans", sans-serif;
+    height: 150vh;
+}
+i,
+img,
+h2,
+h4,
+button {
+    cursor: pointer;
+}
+h2 {
+    font-size: 20px;
+    font-weight: 700;
+}
+h4 {
+    font-size: 17px;
+    font-weight: 600;
+}
+button {
+    border: none;
+}
+:focus {
+    outline: none;
+}
+.star-rating {
+    font-size: 7px;
+    color: #e9af8e;
+}
+.main-screen {
+    margin: 150px 25px 0px 25px;
+}
+.screen-setting {
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    height: 100%;
+    overflow: hidden;
+}
+.screen-header {
+    z-index: 100;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+}
+.screen-header__bar {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 15px 50px 15px;
+    background-color: #0f4c81;
+}
+.screen-header__bar > span {
+    cursor: pointer;
+    font-weight: 600;
+}
+.screen-header__search {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.screen-header__search > input {
+    z-index: inherit;
+    position: absolute;
+    box-sizing: border-box;
+    width: 310px;
+    bottom: -25px;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+.screen-header__search > i {
+    position: absolute;
+    right: 35px;
+    bottom: -10px;
+    color: #7d8285;
+}
+.book-recommendation__row {
+    display: flex;
+    align-items: center;
+    margin: 20px 0px 30px 0px;
+}
+.book-recommendation img {
+    width: 105px;
+    height: 160px;
+    border-radius: 10px;
+}
+.book-recommendation__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 20px;
+    line-height: 35px;
+}
+.book-recommendation__info .star-ranking {
+    font-size: 10px;
+}
+.book-recommendation__details span {
+    cursor: pointer;
+    font-size: 13px;
+    margin: 0px 8px;
+}
+.book-recommendation__btn {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0px;
+}
+.book-recommendation__btn div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #658dc6;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+.book-recommendation__btn i {
+    color: white;
+}
+.book-recommendation__btn span {
+    cursor: pointer;
+    font-size: 13px;
+    color: white;
+    background-color: #0f4c81;
+    margin-left: 10px;
+    padding: 0px 20px;
+    border-radius: 10px;
+}
+.book-ranking__row {
+    display: flex;
+    margin: 25px 0px;
+}
+.book-ranking__row img {
+    width: 70px;
+    height: 105px;
+    border-radius: 10px;
+    margin-right: 25px;
+}
+.book-ranking__row .star-rating {
+    margin-top: 15px;
+}
+.author-recommendation__info {
+    display: flex;
+    margin-top: 25px;
+}
+.author-recommendation__info img {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 10px;
+}
+.author-recommendation__info h4 {
+    margin-left: 20px;
+    padding-top: 15px;
+}

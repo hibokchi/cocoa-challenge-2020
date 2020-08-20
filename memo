@@ -1,0 +1,43 @@
+
+            <main class="main-screen">
+                <section class="book-recommendation">
+                    <div>
+                        <h2></h2>
+                        <img class="book-recommendation__img" src="#" />
+                        <div>
+                            <h4></h4>
+                            <div class="star-ranking">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half"></i>
+                            </div>
+                            <div>
+                                <button></button>
+                                <button></button>
+                            </div>
+                            <div>
+                                <i class="fas fa-bookmark fa-lg"></i>
+                                <button></button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="book-ranking">
+                    <h2></h2>
+                    <div class="book-ranking__row">
+                        <div>
+                            <img src="" alt="" />
+                            <div class="star-rating"></div>
+                        </div>
+                    </div>
+                </section>
+                <section class="author-recommendation">
+                    <h2></h2>
+                    <div>
+                        <img src="" alt="" />
+                        <h4></h4>
+                    </div>
+                </section>
+            </main>

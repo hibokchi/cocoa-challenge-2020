@@ -1,0 +1,28 @@
+@keyframes slideRow {
+    0% {
+        transform: translateX(0);
+    }
+    1% {
+        transform: translateX(0);
+    }
+    49% {
+        transform: translateX(-800px);
+    }
+    51% {
+        transform: translateX(-800px);
+    }
+    99% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.book-ranking__row {
+    animation: slideRow 60s linear infinite;
+    animation-delay: 0.5s;
+}
+.book-ranking__row:hover {
+    animation-play-state: paused;
+}
